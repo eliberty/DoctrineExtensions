@@ -43,9 +43,12 @@
         "doctrine/common": "~2.4"
     },
     "require-dev": {
-        "doctrine/mongodb-odm": "~1.0-BETA10",
-        "doctrine/orm": "~2.4",
-        "symfony/yaml": "~2.3"
+        "doctrine/mongodb-odm": ">=1.0.0-BETA13",
+        "doctrine/orm": ">=2.5.0",
+        "doctrine/common": ">=2.5.0",
+        "symfony/yaml": "~2.6",
+        "phpunit/phpunit": "~4.4",
+        "phpunit/phpunit-mock-objects": "~2.3"
     },
     "suggest": {
         "doctrine/mongodb-odm": "to use the extensions with the MongoDB ODM",
@@ -54,9 +57,12 @@
     "autoload": {
         "psr-0": { "Gedmo\\": "lib/" }
     },
+    "config": {
+        "bin-dir": "bin"
+    },
     "extra": {
         "branch-alias": {
-            "dev-master": "2.3.x-dev"
+            "dev-master": "2.4.x-dev"
         }
     }
 }
